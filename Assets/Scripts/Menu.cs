@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
-using System.Collections;
-using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -44,5 +40,16 @@ public class Menu : MonoBehaviour
      
     }
 
+    public void OnButtonModelPressed()
+    {
+        SceneManager.LoadScene("ModelView");
+    }
+
+    public void OnButtonBackPressed()
+    {
+
+        SceneManager.LoadScene("InsideFHKufstein");
+
+    }
 
 }
