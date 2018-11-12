@@ -45,11 +45,16 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("ModelView");
     }
 
+    public void OnButtonPlanPressed()
+    {
+        SceneManager.LoadScene("Plan");
+    }
     public void OnButtonBackPressed()
     {
 
         SceneManager.LoadScene("InsideFHKufstein");
 
     }
+    
 
 }
